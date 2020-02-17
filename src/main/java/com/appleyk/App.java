@@ -11,10 +11,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * <p>启动类</p>
  *
- * @author yukun24@126.com
- * @version V.1.0.1
- * @company 苏州中科蓝迪
- * @date created on 15:13 2019/12/5
+ * @author Appleyk
+ * @version V.0.1.1
+ * @blob https://blog.csdn.net/Appleyk
+ * @date created on 15:57 2020/2/17
  */
 @SpringBootApplication
 @EnableDiscoveryClient
