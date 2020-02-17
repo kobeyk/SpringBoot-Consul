@@ -4,19 +4,21 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 /**
- * <p></p>
+ * <p>数据库配置类（简单模拟下）</p>
  *
- * @author yukun24@126.com
- * @version V.1.0.1
- * @company 苏州中科蓝迪
- * @date created on 15:57 2019/12/5
+ * @author Appleyk
+ * @version V.0.1.1
+ * @blob https://blog.csdn.net/Appleyk
+ * @date created on 15:57 2020/2/17
  */
 @ConfigurationProperties(prefix = "spring.datasource")
-@RefreshScope
 public class DbConfig {
 
+    /**连接地址*/
     private String url ;
+    /**用户名*/
     private String username;
+    /**密码*/
     private String password;
 
     public DbConfig() {

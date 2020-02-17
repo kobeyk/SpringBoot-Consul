@@ -3,6 +3,7 @@ package com.appleyk.controller;
 import com.appleyk.config.DbConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,16 +11,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * <p></p>
+ * <p>（模拟）数据库参数配置访问，用户请求控制层</p>
  *
- * @author yukun24@126.com
- * @version V.1.0.1
- * @company 苏州中科蓝迪
- * @date created on 15:59 2019/12/5
+ * @author Appleyk
+ * @version V.0.1.1
+ * @blob https://blog.csdn.net/Appleyk
+ * @date created on 15:57 2020/2/17
  */
 @CrossOrigin
 @RestController
 @RequestMapping("/consul")
+@RefreshScope // 如果参数变化，自动刷新
 public class DbController {
 
     @Autowired
